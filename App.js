@@ -9,6 +9,7 @@ import {
 import StartScreen from "./screens/StartScreen";
 import { LinearGradient } from "expo-linear-gradient";
 import GameScreen from "./screens/GameScreen";
+import Color from "./constants/Colors";
 
 export default function App() {
   const [number, setNumber] = useState();
@@ -22,7 +23,10 @@ export default function App() {
     screen = <GameScreen />;
   }
   return (
-    <LinearGradient colors={["#4e0329", "#ddb52f"]} style={styles.rootScreen}>
+    <LinearGradient
+      colors={[Color.primaryPurple, Color.primaryYellow]}
+      style={styles.rootScreen}
+    >
       <SafeAreaView style={styles.rootScreen}>
         <ImageBackground
           source={require("./assets/images/background.jpg")}
@@ -40,7 +44,7 @@ export default function App() {
 const styles = StyleSheet.create({
   rootScreen: {
     flex: 1,
-    backgroundColor: "#ddb52f",
+    backgroundColor: Color.primaryYellow,
   },
   backGround: {
     opacity: 0.7,
