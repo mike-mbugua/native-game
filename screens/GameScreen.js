@@ -7,6 +7,6 @@ function GameScreen() {
 export default GameScreen;
 const styles = StyleSheet.create({
   screenHandler: {
-    marginTop: 20,
+    padding: 24,
   },
 });
