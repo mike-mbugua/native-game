@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { TextInput, View, StyleSheet, Alert } from "react-native";
 import PrimaryButton from "../components/PrimaryButton";
+import Colors from "../constants/Colors";
 
 function StartScreen({ onValue }) {
   const [enteredNumber, setEnteredNumber] = useState("");
@@ -45,7 +46,7 @@ export default StartScreen;
 
 const styles = StyleSheet.create({
   input: {
-    backgroundColor: "#4e0329",
+    backgroundColor: Colors.primaryPurple,
     marginTop: 100,
     marginHorizontal: 15,
     borderRadius: 20,
@@ -62,7 +63,7 @@ const styles = StyleSheet.create({
     // borderColor: "#1E1E1E",
     color: "#ddb521",
     borderBottomWidth: 2,
-    borderBottomColor: "#ddb521",
+    borderBottomColor: Colors.primaryYellow,
     width: 100,
     fontSize: 30,
     marginBottom: 10,

@@ -1,5 +1,5 @@
 import { Text, View, StyleSheet, Pressable } from "react-native";
-
+import Colors from "../constants/Colors";
 function PrimaryButton({ children, onClick }) {
   return (
     <Pressable onPress={onClick}>
@@ -14,7 +14,7 @@ export default PrimaryButton;
 const styles = StyleSheet.create({
   button: {
     borderWidth: 1,
-    borderColor: "#ddb52f",
+    borderColor: Colors.primaryYellow,
     fontSize: 15,
     color: "white",
     paddingVertical: 8,
